@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     imageButton.setClickable(false);
-                    progressBar.setVisibility(View.VISIBLE);
+                    isProgressVisible = true;
                     Uri uri = Uri.parse("https://una26.com/?e=2954443&c=una7&fbclid=IwAR0RfekPoN_mG8WWyzNqGskFHG-bni6JLAGXpU_MjYqGi1u5a5cDy_EnhuU");
                     startActivity(new Intent(Intent.ACTION_VIEW, uri));
-                    progressBar.setVisibility(View.INVISIBLE);
+                    isProgressVisible = false;
                 } catch (ActivityNotFoundException e) {
                     e.printStackTrace();
                     Toast.makeText(MainActivity.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
