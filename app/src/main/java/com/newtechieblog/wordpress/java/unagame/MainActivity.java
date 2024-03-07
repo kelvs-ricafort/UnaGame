@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     imageButton.setClickable(false);
                     progressBar.setVisibility(View.VISIBLE);
-                    Uri uri = Uri.parse("https://l.facebook.com/l.php?u=http%3A%2F%2Funa26.com%2F%3Fe%3D2954443%26c%3Duna7%26fbclid%3DIwAR3vre_s6Etu1DG8ciIKXlZJFl0a7u7vkHRQWP6g0dJ2nzn_KsToV6svBnY&h=AT3N3RJrCK96oM7ZQw-srC8HmSFO_tU6kRVSrLAaKQtumHBa2ZbGk2N6ztujrrLKztZuZ9UuZV9tXgaMAUy573nS_2AixBMJoXACopNvvXhOFDlIT73TFjpBS9MBbcw5mRw");
+                    Uri uri = Uri.parse("https://una26.com/?e=2954443&c=una7&fbclid=IwAR0RfekPoN_mG8WWyzNqGskFHG-bni6JLAGXpU_MjYqGi1u5a5cDy_EnhuU");
                     startActivity(new Intent(Intent.ACTION_VIEW, uri));
                     progressBar.setVisibility(View.INVISIBLE);
                 } catch (ActivityNotFoundException e) {
